@@ -73,6 +73,9 @@ Este repositorio es abierto a mejoras:
 
 ## ⚠️ Disclaimer
 
-Las recomendaciones aquí descritas son buenas prácticas generales, pero pueden variar dependiendo del proyecto, escala y contexto.
+Este documento tiene fines informativos y presenta recomendaciones generales basadas en prácticas habituales de desarrollo.
+
+No constituye una guía definitiva ni garantiza resultados específicos.  
+Cada equipo o desarrollador debe evaluar su aplicabilidad según su propio entorno y requerimientos.
 
 ---
