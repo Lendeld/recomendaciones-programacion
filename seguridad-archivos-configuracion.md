@@ -181,13 +181,12 @@ npm install dotenv
 ```js
 import dotenv from "dotenv";
 
-dotenv.config({
-  path: process.env.FRONTEND_ENV_PATH,
-});
+if (process.env.NODE_ENV === "development" && process.env.FRONTEND_ENV_PATH) {
+    dotenv.config({
+        path: process.env.FRONTEND_ENV_PATH,
+    });
+}
 
-export default {
-  reactStrictMode: true,
-};
 ```
 
 ## Uso en servidor
@@ -215,23 +214,6 @@ if (!string.IsNullOrEmpty(externalAppSettings) && File.Exists(externalAppSetting
     builder.Configuration.AddJsonFile(externalAppSettings, optional: true, reloadOnChange: true);
 }
 
-// .env externo
-var envPath = Environment.GetEnvironmentVariable("ENV_FILE_PATH");
-
-if (!string.IsNullOrEmpty(envPath) && File.Exists(envPath))
-{
-    foreach (var line in File.ReadAllLines(envPath))
-    {
-        if (string.IsNullOrWhiteSpace(line) || line.StartsWith("#"))
-            continue;
-
-        var parts = line.Split('=', 2);
-        if (parts.Length == 2)
-        {
-            Environment.SetEnvironmentVariable(parts[0].Trim(), parts[1].Trim());
-        }
-    }
-}
 ```
 
 ---
