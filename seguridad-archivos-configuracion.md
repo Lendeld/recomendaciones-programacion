@@ -104,22 +104,34 @@ Archivo:
 ```
 
 ```json
-{
+
   "files.exclude": {
     "**/.env": true,
-    "**/.env.*": true,
+    "**/.env.local": true,
+    "**/.env.development": true,
+    "**/.env.production": true,
     "**/*.env": true,
-    "**/appsettings.*.json": true,
+
+    "**/appsettings.json": true,
+    "**/appsettings.Development.json": true,
+    "**/appsettings.Production.json": true,
+
     "**/secrets": true
   },
+
   "search.exclude": {
     "**/.env": true,
-    "**/.env.*": true,
+    "**/.env.local": true,
+    "**/.env.development": true,
+    "**/.env.production": true,
     "**/*.env": true,
-    "**/appsettings.*.json": true,
+
+    "**/appsettings.json": true,
+    "**/appsettings.Development.json": true,
+    "**/appsettings.Production.json": true,
+
     "**/secrets": true
   }
-}
 ```
 
 ---
