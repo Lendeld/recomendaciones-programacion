@@ -76,9 +76,3 @@ Este repositorio es abierto a mejoras:
 Las recomendaciones aquí descritas son buenas prácticas generales, pero pueden variar dependiendo del proyecto, escala y contexto.
 
 ---
-
-## 📌 Nota final
-
-> "El código se escribe una vez, pero se lee muchas veces."
-
----
