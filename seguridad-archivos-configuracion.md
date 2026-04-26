@@ -51,7 +51,7 @@ Archivos como:
 
 # 🔒 1. Crear archivos ignore para IA
 
-## `.copilotignore`, `.cursorignore`, `.codeiumignore`
+## `.copilotignore`, `.cursorignore`, `.codeiumignore`, `.codexignore`
 
 ```gitignore
 .env
