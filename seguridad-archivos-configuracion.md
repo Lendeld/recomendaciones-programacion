@@ -138,6 +138,20 @@ Archivo:
 
 # 🟢 4. Variables de entorno del sistema
 
+Posiblemente va a tener que hacer esto primero:
+
+### Abre tu shell config (Sonoma usa zsh por defecto)
+
+```bash
+nano ~/.zshrc
+```
+
+### Agrega:
+
+```bash
+export MI_VARIABLE="valor"
+```
+
 ## Mac / Linux
 
 ```bash
